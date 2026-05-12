@@ -30,7 +30,7 @@
 
   <ItemGroup>
     <Reference Include="OmenTools">
-      <HintPath>..\..\DailyRoutines\Dev\OmenTools.dll</HintPath>
+      <HintPath>..\DailyRoutines\Dev\OmenTools.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

@@ -13,8 +13,6 @@ using Dalamud.Plugin.Services;
 using Dalamud.Interface.Textures;
 using Lumina.Excel.Sheets;
 using FFXIVClientStructs.FFXIV.Client.UI.Agent;
-using OmenTools;
-using OmenTools.Dalamud.Services.ObjectTable.Abstractions.ObjectKinds;
 using EliteHunt.Data;
 
 namespace EliteHunt.Managers;
@@ -130,9 +128,9 @@ public class CounterManager
                 if (!sRankMark.TargetMobs.Contains(mobName)) continue;
                 
                 targetObjectsFound++;
-                ulong objId = obj.GameObjectID;
+                ulong objId = obj.GameObjectId;
                 
-                // 使用OmenTools的稳定接口获取死亡状态
+                // 使用Dalamud原始接口获取死亡状态
                 bool isDead = obj.IsDead;
                 bool isTargetable = obj.IsTargetable;
 
