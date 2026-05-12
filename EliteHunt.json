@@ -1,0 +1,13 @@
+{
+  "Name": "EliteHunt - 精英狩猎助手",
+  "Author": "Jinyu",
+  "Punchline": "精英狩猎助手，S怪计数与地图视图",
+  "Description": "EliteHunt 精英狩猎助手是一个专注于 S/A/B 级恶名精英的狩猎工具。它提供 S怪计数器、狩猎地图视图、怪物位置标记和自动寻路等功能，让你的狩猎体验更加便捷高效。\n\n主要功能：\n- S怪计数器，追踪 S级恶名精英刷新\n- 狩猎地图视图，自动识别当前地图\n- 显示 S/A/B 级恶名精英位置\n- 怪物搜索功能\n- 自动传送和寻路",
+  "Tags": ["Hunt", "S-Rank", "Map", "Counter"],
+  "InternalName": "EliteHunt",
+  "AssemblyVersion": "1.0.0.0",
+  "DalamudApiLevel": 15,
+  "ApplicableVersion": "any",
+  "LoadPriority": 0,
+  "SupportsProfiles": true
+}

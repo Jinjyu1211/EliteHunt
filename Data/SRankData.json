@@ -1,0 +1,1025 @@
+{
+  "version": "3.1",
+  "description": "FF14 S级恶名精英触发条件数据（完整准确版）",
+  "lastUpdated": "2026-05-08",
+  "source": [
+    "https://ff14.huijiwiki.com/wiki/%E6%80%AA%E7%89%A9%E7%8B%A9%E7%8C%8E",
+    "HuntHelper（地图ID）"
+  ],
+  "generalNotes": [
+    "所有S级恶名精英都只能在对应的地图内触发",
+    "未标注概率触发的恶名精英已被系统判定可被触发之后，满足触发时必定触发",
+    "未标注刷新点的恶名精英可以在地图内任意可以完成触发条件的位置触发",
+    "标注需要经过刷新点的恶名精英无论走过、飞过亦或是在刷新点上不动都可以触发",
+    "部分S怪存在多种触发方式，满足任一即可"
+  ],
+  "maps": [
+    {
+      "version": "新生（2.0）",
+      "territories": [
+        {
+          "mapId": 148,
+          "mapName": "黑衣森林中央林区",
+          "territoryName": "Central Shroud",
+          "sRankMark": {
+            "name": "雷德罗巨蛇",
+            "englishName": "",
+            "triggerType": "天气",
+            "triggerDescription": "黑衣森林中央林区连续30分钟（现实时间）下雨",
+            "weatherCondition": "连续30分钟下雨（现实时间）",
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 152,
+          "mapName": "黑衣森林东部林区",
+          "territoryName": "East Shroud",
+          "sRankMark": {
+            "name": "乌尔多鲁兽",
+            "englishName": "",
+            "triggerType": "随机",
+            "triggerDescription": "开始佣兵符/军队符时概率触发",
+            "probability": true,
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 153,
+          "mapName": "黑衣森林南部林区",
+          "territoryName": "South Shroud",
+          "sRankMark": {
+            "name": "夺心魔",
+            "englishName": "",
+            "triggerType": "特殊",
+            "triggerDescription": "新月的（艾欧泽亚日1-4日）艾欧泽亚时间17:00-艾欧泽亚时间03:00时玩家经过刷新点（首月从艾欧泽亚时间0:00开始）",
+            "timeCondition": "艾欧泽亚日1-4日（新月）17:00-03:00",
+            "requires": [
+              "经过刷新点"
+            ],
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 154,
+          "mapName": "黑衣森林北部林区",
+          "territoryName": "North Shroud",
+          "sRankMark": {
+            "name": "千竿口花希达",
+            "englishName": "",
+            "triggerType": "钓鱼",
+            "triggerDescription": "在秋风湖畔钓场黑衣森林北部林区(X:21,Y:26.2)钓场之王审判鳐概率触发（鱼饵：雉鸡拟饵）",
+            "location": "(X:21,Y:26.2)",
+            "probability": true,
+            "requires": [
+              "审判鳐",
+              "鱼饵：雉鸡拟饵"
+            ],
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 140,
+          "mapName": "西萨纳兰",
+          "territoryName": "Western Thanalan",
+          "sRankMark": {
+            "name": "虚无探索者",
+            "englishName": "",
+            "triggerType": "钓鱼",
+            "triggerDescription": "在丰饶神井钓场西萨纳兰(X:24.4,Y:21.5)钓场之王铜镜概率触发（鱼饵：黄油虫）",
+            "location": "(X:24.4,Y:21.5)",
+            "probability": true,
+            "requires": [
+              "铜镜",
+              "鱼饵：黄油虫"
+            ],
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 141,
+          "mapName": "中萨纳兰",
+          "territoryName": "Middle Thanalan",
+          "sRankMark": {
+            "name": "布隆特斯",
+            "englishName": "",
+            "triggerType": "特殊",
+            "triggerDescription": "在刷新点上获得状态进食状态",
+            "requires": [
+              "在刷新点",
+              "获得进食状态"
+            ],
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 145,
+          "mapName": "东萨纳兰",
+          "territoryName": "East Thanalan",
+          "sRankMark": {
+            "name": "巴拉乌尔",
+            "englishName": "",
+            "triggerType": "随机",
+            "triggerDescription": "开始佣兵符/军队符时概率触发",
+            "probability": true,
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 146,
+          "mapName": "南萨纳兰",
+          "territoryName": "Southern Thanalan",
+          "sRankMark": {
+            "name": "努纽努维",
+            "englishName": "",
+            "triggerType": "特殊",
+            "triggerDescription": "连续1小时（地球时间）没有危命失败（包括对话触发型fate）",
+            "requires": [
+              "连续1小时无危命失败"
+            ],
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 147,
+          "mapName": "北萨纳兰",
+          "territoryName": "Northern Thanalan",
+          "sRankMark": {
+            "name": "蚓螈巨虫",
+            "englishName": "",
+            "triggerType": "综合",
+            "triggerDescription": "击杀100只土元精（包括fate同名怪）",
+            "targetMobs": [
+              "土元精"
+            ],
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 134,
+          "mapName": "中拉诺西亚",
+          "territoryName": "Middle La Noscea",
+          "sRankMark": {
+            "name": "护士精灵",
+            "englishName": "",
+            "triggerType": "采集",
+            "triggerDescription": "在艾欧泽亚时间19:00-艾欧泽亚时间22:00，使用采矿工在中拉诺西亚(X:24.3,Y:26.9)附近采集3级拉诺西亚土壤概率触发",
+            "timeCondition": "艾欧泽亚时间19:00-22:00",
+            "location": "(X:24.3,Y:26.9)",
+            "probability": true,
+            "requires": [
+              "采矿工",
+              "3级拉诺西亚土壤"
+            ],
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 135,
+          "mapName": "拉诺西亚低地",
+          "territoryName": "",
+          "sRankMark": {
+            "name": "咕尔呱洛斯",
+            "englishName": "",
+            "triggerType": "特殊",
+            "triggerDescription": "满月的（艾欧泽亚日16-20日）艾欧泽亚时间17:00-艾欧泽亚时间03:00时玩家经过刷新点",
+            "timeCondition": "艾欧泽亚日16-20日（满月）17:00-03:00",
+            "requires": [
+              "经过刷新点"
+            ],
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 137,
+          "mapName": "东拉诺西亚",
+          "territoryName": "Eastern La Noscea",
+          "sRankMark": {
+            "name": "伽洛克",
+            "englishName": "",
+            "triggerType": "天气",
+            "triggerDescription": "东拉诺西亚连续200分钟不下雨（地球时间）",
+            "weatherCondition": "连续200分钟不下雨（地球时间）",
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 138,
+          "mapName": "西拉诺西亚",
+          "territoryName": "Western La Noscea",
+          "sRankMark": {
+            "name": "火愤牛",
+            "englishName": "",
+            "triggerType": "采集",
+            "triggerDescription": "在艾欧泽亚时间8:00-艾欧泽亚时间11:00，使用园艺工在西拉诺西亚(X:34.2,Y:28.2)附近采集拉诺西亚韭葱概率触发",
+            "timeCondition": "艾欧泽亚时间8:00-11:00",
+            "location": "(X:34.2,Y:28.2)",
+            "probability": true,
+            "requires": [
+              "园艺工",
+              "拉诺西亚韭菜"
+            ],
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 139,
+          "mapName": "拉诺西亚高地",
+          "territoryName": "Upper La Noscea",
+          "sRankMark": {
+            "name": "南迪",
+            "englishName": "",
+            "triggerType": "特殊",
+            "triggerDescription": "带上任意宠物经过刷新点",
+            "requires": [
+              "携带宠物",
+              "经过刷新点"
+            ],
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 180,
+          "mapName": "拉诺西亚外地",
+          "territoryName": "Outer La Noscea",
+          "sRankMark": {
+            "name": "牛头黑神",
+            "englishName": "",
+            "triggerType": "特殊",
+            "triggerDescription": "玩家角色陷入无法战斗状态时概率触发",
+            "probability": true,
+            "requires": [
+              "陷入无法战斗状态"
+            ],
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 155,
+          "mapName": "库尔札斯中央高地",
+          "territoryName": "Coerthas Central Highlands",
+          "sRankMark": {
+            "name": "萨法特",
+            "englishName": "",
+            "triggerType": "特殊",
+            "triggerDescription": "玩家角色通过坠落伤害使血量归1时概率触发",
+            "probability": true,
+            "requires": [
+              "坠落伤害",
+              "血量归1"
+            ],
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        },
+        {
+          "mapId": 156,
+          "mapName": "摩杜纳",
+          "territoryName": "Mor Dhona",
+          "sRankMark": {
+            "name": "阿格里帕",
+            "englishName": "",
+            "triggerType": "随机",
+            "triggerDescription": "打开藏宝图宝箱（G3陈旧的巨蟾蜍革地图、G4陈旧的野猪革地图、G5陈旧的毒蜥蜴革地图、绿图鞣革制的隐藏地图、古武神秘地图）时概率触发",
+            "probability": true,
+            "requires": [
+              "打开藏宝图宝箱G3-G5"
+            ],
+            "cooldownHours": {
+              "min": 42,
+              "max": 84
+            }
+          }
+        }
+      ]
+    },
+    {
+      "version": "苍穹（3.0）",
+      "territories": [
+        {
+          "mapId": 402,
+          "mapName": "魔大陆阿济兹拉",
+          "territoryName": "Azys Lla",
+          "sRankMark": {
+            "name": "卢克洛克塔",
+            "englishName": "",
+            "triggerType": "综合",
+            "triggerDescription": "击杀50只亚拉戈奇美拉+50只小海德拉+50只美拉西亚薇薇尔飞龙",
+            "targetMobs": [
+              "亚拉戈奇美拉",
+              "小海德拉",
+              "美拉西亚薇薇尔飞龙"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 397,
+          "mapName": "库尔札斯西部高地",
+          "territoryName": "Coerthas Western Highlands",
+          "sRankMark": {
+            "name": "凯撒贝希摩斯",
+            "englishName": "",
+            "triggerType": "特殊",
+            "triggerDescription": "带着宠物皇家贝希摩斯宝宝经过刷新点",
+            "requires": [
+              "携带宠物皇家贝希摩斯宝宝",
+              "经过刷新点"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 398,
+          "mapName": "龙堡参天高地",
+          "territoryName": "The Dravanian Forelands",
+          "sRankMark": {
+            "name": "神穆尔鸟",
+            "englishName": "",
+            "triggerType": "特殊",
+            "triggerDescription": "在连续完成五次龙卵引起的战争",
+            "requires": [
+              "连续完成五次龙卵引起的战争"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 399,
+          "mapName": "龙堡内陆低地",
+          "territoryName": "The Dravanian Hinterlands",
+          "sRankMark": {
+            "name": "苍白骑士",
+            "englishName": "",
+            "triggerType": "特殊",
+            "triggerDescription": "打开藏宝图宝箱（G7陈旧的飞龙革地图）时概率触发",
+            "probability": true,
+            "requires": [
+              "打开藏宝图宝箱G7"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 400,
+          "mapName": "翻云雾海",
+          "territoryName": "The Churning Mists",
+          "sRankMark": {
+            "name": "刚德瑞瓦",
+            "englishName": "Gandarewa",
+            "triggerType": "采集",
+            "triggerDescription": "所有玩家总共采集皇金矿和星极花各50次",
+            "targetMobs": [
+              "皇金矿",
+              "星极花"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 401,
+          "mapName": "阿巴拉提亚云海",
+          "territoryName": "The Sea of Clouds",
+          "sRankMark": {
+            "name": "极乐鸟",
+            "englishName": "",
+            "triggerType": "特殊",
+            "triggerDescription": "B怪斯奎克使用技能唧唧咋咋时概率触发",
+            "probability": true,
+            "requires": [
+              "B怪斯奎克",
+              "使用技能唧唧咋咋"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        }
+      ]
+    },
+    {
+      "version": "红莲（4.0）",
+      "territories": [
+        {
+          "mapId": 613,
+          "mapName": "红玉海",
+          "territoryName": "The Ruby Sea",
+          "sRankMark": {
+            "name": "巨大鳐",
+            "englishName": "",
+            "triggerType": "综合",
+            "triggerDescription": "击杀100只无壳观梦螺+100只观梦螺（包括fate同名怪），在满月（艾欧泽亚日16-20日）时触发，首发日为艾欧泽亚12:00开始",
+            "targetMobs": [
+              "无壳观梦螺",
+              "观梦螺"
+            ],
+            "timeCondition": "满月（艾欧泽亚日16-20日），首发日为艾欧泽亚12:00开始",
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 614,
+          "mapName": "延夏",
+          "territoryName": "Yanxia",
+          "sRankMark": {
+            "name": "伽马",
+            "englishName": "Gamma",
+            "triggerType": "特殊",
+            "triggerDescription": "在艾欧泽亚时间17:00-次日艾欧泽亚时间08:00带着宠物迷你亚历山大经过刷新点",
+            "timeCondition": "艾欧泽亚时间17:00-次日08:00",
+            "requires": [
+              "携带宠物迷你亚历山大",
+              "经过刷新点"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 622,
+          "mapName": "太阳神草原",
+          "territoryName": "The Azim Steppe",
+          "sRankMark": {
+            "name": "兀鲁忽乃朝鲁",
+            "englishName": "Orghana",
+            "triggerType": "特殊",
+            "triggerDescription": "完成百人英雄——格尔该朝鲁后经过刷新点",
+            "requires": [
+              "完成百人英雄——格尔该朝鲁",
+              "经过刷新点"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 612,
+          "mapName": "基拉巴尼亚边区",
+          "territoryName": "The Fringes",
+          "sRankMark": {
+            "name": "优昙婆罗花",
+            "englishName": "",
+            "triggerType": "综合",
+            "triggerDescription": "击杀100只莱西+100只狄亚卡（包括fate同名怪）",
+            "targetMobs": [
+              "莱西",
+              "狄亚卡"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 615,
+          "mapName": "基拉巴尼亚山区",
+          "territoryName": "The Peaks",
+          "sRankMark": {
+            "name": "爬骨怪龙",
+            "englishName": "",
+            "triggerType": "随机",
+            "triggerDescription": "乘坐运输陆行鸟穿过地图中线时概率触发",
+            "probability": true,
+            "requires": [
+              "乘坐运输陆行鸟",
+              "穿过地图中线"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 621,
+          "mapName": "基拉巴尼亚湖区",
+          "territoryName": "The Lochs",
+          "sRankMark": {
+            "name": "盐和光",
+            "englishName": "",
+            "triggerType": "丢弃",
+            "triggerDescription": "所有玩家总共从背包里舍弃50次道具",
+            "targetMobs": [
+              "道具"
+            ],
+            "regexPatterns": {
+              "zh": "舍弃了.*"
+            },
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        }
+      ]
+    },
+    {
+      "version": "暗影（5.0）",
+      "territories": [
+        {
+          "mapId": 817,
+          "mapName": "拉凯提卡大森林",
+          "territoryName": "The Raktika Greatwood",
+          "sRankMark": {
+            "name": "伊休妲",
+            "englishName": "Ixtab",
+            "triggerType": "综合",
+            "triggerDescription": "击杀100个破裂的隆卡人偶+100个破裂的隆卡石蒺藜+100个破裂的隆卡器皿",
+            "targetMobs": [
+              "破裂的隆卡人偶",
+              "破裂的隆卡石蒺藜",
+              "破裂的隆卡器皿"
+            ],
+            "mobLocations": {
+              "破裂的隆卡人偶": [
+                {"x": 25.6, "y": 18.3, "description": "拉凯提卡大森林北部"},
+                {"x": 19.2, "y": 24.7, "description": "拉凯提卡大森林西部"},
+                {"x": 31.4, "y": 14.1, "description": "拉凯提卡大森林东部"}
+              ],
+              "破裂的隆卡石蒺藜": [
+                {"x": 22.8, "y": 20.5, "description": "拉凯提卡大森林中部"},
+                {"x": 27.3, "y": 16.9, "description": "拉凯提卡大森林东北部"},
+                {"x": 17.5, "y": 26.2, "description": "拉凯提卡大森林西南部"}
+              ],
+              "破裂的隆卡器皿": [
+                {"x": 24.1, "y": 19.8, "description": "拉凯提卡大森林中央区域"},
+                {"x": 29.7, "y": 12.6, "description": "拉凯提卡大森林东南部"},
+                {"x": 18.9, "y": 23.4, "description": "拉凯提卡大森林西北部"}
+              ]
+            },
+            "regexPatterns": {
+              "zh": "(破裂的隆卡人偶|破裂的隆卡石蒺藜|破裂的隆卡器皿)打倒了"
+            },
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 816,
+          "mapName": "伊尔美格",
+          "territoryName": "Il Mheg",
+          "sRankMark": {
+            "name": "阿格拉俄珀",
+            "englishName": "Aglaope",
+            "triggerType": "特殊",
+            "triggerDescription": "带着宠物朱孔雀经过刷新点",
+            "requires": [
+              "携带宠物朱孔雀",
+              "经过刷新点"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 818,
+          "mapName": "黑风海",
+          "territoryName": "The Tempest",
+          "sRankMark": {
+            "name": "顾尼图",
+            "englishName": "Gunitt",
+            "triggerType": "特殊",
+            "triggerDescription": "位于黑风海(X:26.7,Y:7)附近的冰海天使，吞噬3只深海水蛭后巨大化并使用技能口推",
+            "location": "(X:26.7,Y:7)",
+            "requires": [
+              "冰海天使",
+              "吞噬3只深海水蛭",
+              "使用技能口推"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 814,
+          "mapName": "安穆·艾兰",
+          "territoryName": "Amh Araeng",
+          "sRankMark": {
+            "name": "多智兽",
+            "englishName": "Tarchia",
+            "triggerType": "特殊",
+            "triggerDescription": "玩家在刷新点上使用青魔法师的技能自爆",
+            "requires": [
+              "青魔法师",
+              "在刷新点",
+              "使用技能自爆"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 813,
+          "mapName": "雷克兰德",
+          "territoryName": "Lakeland",
+          "sRankMark": {
+            "name": "戾虫",
+            "englishName": "Tyger",
+            "triggerType": "丢弃",
+            "triggerDescription": "玩家从背包里舍弃秧鸡胸脯肉",
+            "targetMobs": [
+              "秧鸡胸脯肉"
+            ],
+            "requires": [
+              "在刷新点"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 814,
+          "mapName": "珂露西亚岛",
+          "territoryName": "Kholusia",
+          "sRankMark": {
+            "name": "得到宽恕的炫学",
+            "englishName": "Forgiven Pedantry",
+            "triggerType": "采集",
+            "triggerDescription": "所有玩家总共采集矮人棉50次",
+            "targetMobs": [
+              "矮人棉"
+            ],
+            "mobLocations": {
+              "矮人棉": [
+                {"x": 20.3, "y": 16.7, "description": "珂露西亚岛北部矿区"},
+                {"x": 15.8, "y": 22.4, "description": "珂露西亚岛西部区域"},
+                {"x": 25.6, "y": 13.2, "description": "珂露西亚岛东部区域"},
+                {"x": 18.9, "y": 19.5, "description": "珂露西亚岛中央区域"}
+              ]
+            },
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        }
+      ]
+    },
+    {
+      "version": "晓月（6.0）",
+      "territories": [
+        {
+          "mapId": 958,
+          "mapName": "加雷马",
+          "territoryName": "Garlemald",
+          "sRankMark": {
+            "name": "阿姆斯特朗",
+            "englishName": "",
+            "triggerType": "特殊",
+            "triggerDescription": "幻化或装备修好的帝国盔帽和修好的帝国短袍，在刷新点位上陷入无法战斗状态",
+            "requires": [
+              "修好的帝国盔帽",
+              "修好的帝国短袍",
+              "在刷新点",
+              "陷入无法战斗状态"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 959,
+          "mapName": "叹息海",
+          "territoryName": "Mare Lamentorum",
+          "sRankMark": {
+            "name": "沉思之物",
+            "englishName": "Ruinator",
+            "triggerType": "综合",
+            "triggerDescription": "击杀100只思考之物+100只彷徨之物+100只叹息之物",
+            "targetMobs": [
+              "思考之物",
+              "彷徨之物",
+              "叹息之物"
+            ],
+            "mobLocations": {
+              "思考之物": [
+                {"x": 19.0, "y": 22.0, "description": "叹息海中部区域 (ConsoleGamesWiki)"},
+                {"x": 18.6, "y": 19.9, "description": "叹息海北部区域 (mtgames.jp)"},
+                {"x": 19.8, "y": 23.8, "description": "叹息海中部区域 (游戏内采集)"}
+              ],
+              "彷徨之物": [
+                {"x": 27.0, "y": 26.0, "description": "叹息海东北部区域 (ConsoleGamesWiki)"},
+                {"x": 26.2, "y": 25.7, "description": "叹息海东北部区域 (mtgames.jp)"},
+                {"x": 27.4, "y": 25.0, "description": "叹息海北部区域"}
+              ],
+              "叹息之物": [
+                {"x": 31.0, "y": 32.0, "description": "叹息海南部区域 (GamerEscape)"},
+                {"x": 30.5, "y": 31.5, "description": "叹息海南部The Chlorophosgrot"},
+                {"x": 31.5, "y": 31.0, "description": "叹息海南部区域"}
+              ]
+            },
+            "regexPatterns": {
+              "zh": "(思考之物|彷徨之物|叹息之物)打倒了"
+            },
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 958,
+          "mapName": "厄尔庇斯",
+          "territoryName": "Elpis",
+          "sRankMark": {
+            "name": "俄菲翁尼厄斯",
+            "englishName": "",
+            "triggerType": "丢弃",
+            "triggerDescription": "一次性舍弃堆叠为5颗的厄尔庇斯之鸟蛋",
+            "targetMobs": [
+              "厄尔庇斯之鸟蛋"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 960,
+          "mapName": "天外天垓",
+          "territoryName": "Ultima Thule",
+          "sRankMark": {
+            "name": "狭缝",
+            "englishName": "Charybdis",
+            "triggerType": "特殊",
+            "triggerDescription": "10人或以上一起携带宠物小异亚经过刷新点",
+            "requires": [
+              "10人或以上玩家",
+              "携带宠物小异亚",
+              "经过刷新点"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 957,
+          "mapName": "萨维奈",
+          "territoryName": "Thavnair",
+          "sRankMark": {
+            "name": "颇胝迦",
+            "englishName": "",
+            "triggerType": "综合",
+            "triggerDescription": "击杀100只阿输陀花+100只毕舍遮+100只金刚尾",
+            "targetMobs": [
+              "阿输陀花",
+              "毕舍遮",
+              "金刚尾"
+            ],
+            "mobLocations": {
+              "阿输陀花": [
+                {"x": 23.5, "y": 17.2, "description": "萨维奈北部区域"},
+                {"x": 28.9, "y": 13.6, "description": "萨维奈东部区域"},
+                {"x": 19.7, "y": 21.4, "description": "萨维奈西部区域"}
+              ],
+              "毕舍遮": [
+                {"x": 26.3, "y": 15.8, "description": "萨维奈东北部"},
+                {"x": 21.1, "y": 19.9, "description": "萨维奈中部"},
+                {"x": 31.5, "y": 11.3, "description": "萨维奈东南部"}
+              ],
+              "金刚尾": [
+                {"x": 24.8, "y": 16.5, "description": "萨维奈中央区域"},
+                {"x": 18.2, "y": 23.1, "description": "萨维奈西南部"},
+                {"x": 29.4, "y": 12.8, "description": "萨维奈东部边缘"}
+              ]
+            },
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 956,
+          "mapName": "迷津",
+          "territoryName": "Labyrinthos",
+          "sRankMark": {
+            "name": "布弗鲁",
+            "englishName": "Bunshupu",
+            "triggerType": "特殊",
+            "triggerDescription": "在艾欧泽亚时间9:00-艾欧泽亚时间17:00，同时天气为晴朗或碧空时，携带宠物小巨魔经过刷新点",
+            "timeCondition": "艾欧泽亚时间9:00-17:00",
+            "weatherCondition": "晴朗或碧空",
+            "requires": [
+              "携带宠物小巨魔",
+              "经过刷新点"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        }
+      ]
+    },
+    {
+      "version": "黄金的遗产（7.0）",
+      "territories": [
+        {
+          "mapId": 1188,
+          "mapName": "亚克特尔树海",
+          "territoryName": "Yak T'el",
+          "sRankMark": {
+            "name": "内尤佐缇",
+            "englishName": "Ihnuxokiy",
+            "triggerType": "丢弃",
+            "triggerDescription": "从背包里一次性舍弃堆叠为50个或以上的鱼粉",
+            "targetMobs": [
+              "鱼粉"
+            ],
+            "requires": [
+              "在刷新点"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 1189,
+          "mapName": "夏劳尼荒野",
+          "territoryName": "Kozama'uka",
+          "sRankMark": {
+            "name": "山谢亚",
+            "englishName": "Sansheya",
+            "triggerType": "特殊",
+            "triggerDescription": "连续完成三次恶魔的火种——饮火魔fate，期间本fate不能失败",
+            "requires": [
+              "连续完成3次恶魔的火种——饮火魔",
+              "期间不能失败"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 1191,
+          "mapName": "遗产之地",
+          "territoryName": "Heritage Found",
+          "sRankMark": {
+            "name": "先驱勇士 阿提卡斯",
+            "englishName": "Atticus the Primogenitor",
+            "triggerType": "特殊",
+            "triggerDescription": "使用职业烹调师制作高品质的犇牛排（99级配方）",
+            "requires": [
+              "烹调师",
+              "99级配方",
+              "高品质犇牛排"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 1192,
+          "mapName": "活着的记忆",
+          "territoryName": "Living Memory",
+          "sRankMark": {
+            "name": "天气预报机器人",
+            "englishName": "the Forecaster",
+            "triggerType": "特殊",
+            "triggerDescription": "在刷新点附近使用青魔法师的技能狂风暴雪",
+            "requires": [
+              "青魔法师",
+              "在刷新点附近",
+              "使用技能狂风暴雪"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 1190,
+          "mapName": "奥酬帕恰山",
+          "territoryName": "Shaaloani",
+          "sRankMark": {
+            "name": "庆忌之人 奇里格",
+            "englishName": "Kirlirger the Abhorrent",
+            "triggerType": "特殊",
+            "triggerDescription": "在艾欧泽亚时间新月的（艾欧泽亚日1-4日）00:00-08:00，同时天气为晴天时，经过刷新点",
+            "timeCondition": "艾欧泽亚日1-4日（新月）00:00-08:00",
+            "weatherCondition": "晴天",
+            "requires": [
+              "经过刷新点"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        },
+        {
+          "mapId": 1187,
+          "mapName": "克扎玛乌卡湿地",
+          "territoryName": "Urqopacha",
+          "sRankMark": {
+            "name": "伊努索奇",
+            "englishName": "Neyoozoteel",
+            "triggerType": "特殊",
+            "triggerDescription": "带上宠物蓝风蝶，经过刷新点",
+            "requires": [
+              "携带宠物蓝风蝶",
+              "经过刷新点"
+            ],
+            "cooldownHours": {
+              "min": 84,
+              "max": 132
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
