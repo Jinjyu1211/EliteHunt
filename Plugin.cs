@@ -18,17 +18,17 @@ public class Plugin : IDalamudPlugin
     internal static Plugin? P;
 
     private IDalamudPluginInterface _pluginInterface = null!;
-    
+
     public Config Config { get; private set; } = null!;
-    
+
     public UI.MainWindow MainWindow { get; private set; } = null!;
-    
+
     public TaskHelper TaskHelper { get; private set; } = null!;
 
     public HuntData HuntData { get; private set; } = null!;
-    
+
     public HuntDataManager HuntDataManager { get; private set; } = null!;
-    
+
     public CounterManager CounterManager { get; private set; } = null!;
 
     public SRankDataManager SRankDataManager { get; private set; } = null!;
@@ -38,29 +38,29 @@ public class Plugin : IDalamudPlugin
     public Plugin(IDalamudPluginInterface pluginInterface)
     {
         P = this;
-        
+
         _pluginInterface = pluginInterface;
-        
+
         DService.Init(pluginInterface);
-        
+
         Config = pluginInterface.GetPluginConfig() as Config ?? new Config();
         Config.Initialize(pluginInterface);
-        
+
         HuntData = new HuntData();
-        
+
         HuntDataManager = new HuntDataManager();
         SRankDataManager = new SRankDataManager();
         CounterManager = new CounterManager();
         MapMarkerManager = new MapMarkerManager();
-        
+
         CounterManager.SetConfigValues(Config.CountInBackground, Config.CounterWindowPos, Config.CounterWindowSize);
-        
+
         MainWindow = new UI.MainWindow();
-        
+
         TaskHelper = new TaskHelper();
-        
+
         InitializeManagers();
-        
+
         DService.Instance().Command.AddHandler("/eh", new Dalamud.Game.Command.CommandInfo(OnCommand)
         {
             HelpMessage = "EliteHunt 插件命令 - 打开主窗口"
@@ -69,20 +69,20 @@ public class Plugin : IDalamudPlugin
         {
             HelpMessage = "重新加载狩猎数据"
         });
-        
-        DService.Instance().UIBuilder.Draw += OnDraw;
-        
+
+        _pluginInterface.UiBuilder.Draw += OnDraw;
+
         _pluginInterface.UiBuilder.OpenConfigUi += OpenConfigUi;
         _pluginInterface.UiBuilder.OpenMainUi += OpenMainUi;
-        
+
         DService.Instance().Log.Information("EliteHunt loaded!");
     }
-    
+
     private void OpenConfigUi()
     {
         MainWindow.Visible = true;
     }
-    
+
     private void OpenMainUi()
     {
         MainWindow.Visible = true;
@@ -139,13 +139,13 @@ public class Plugin : IDalamudPlugin
     private void DrawLocalHuntsWindow()
     {
         if (!Config.ShowLocalHunts) return;
-        
+
         var currentHunts = HuntDataManager.GetCurrentAreaHunts();
         if (currentHunts == null || currentHunts.Count == 0) return;
 
         bool isOpen = true;
         ImGui.Begin("EliteHunt - 本地狩猎", ref isOpen, ImGuiWindowFlags.NoNavInputs | ImGuiWindowFlags.NoDocking);
-        
+
         foreach (var hunt in currentHunts)
         {
             var remaining = hunt.NeededKills - hunt.CurrentKills;
@@ -162,9 +162,9 @@ public class Plugin : IDalamudPlugin
                 ImGui.Text(hunt.Name ?? "Unknown");
             }
         }
-        
+
         ImGui.End();
-        
+
         if (!isOpen)
         {
             Config.ShowLocalHunts = false;
@@ -180,13 +180,13 @@ public class Plugin : IDalamudPlugin
         Config.CounterWindowSize = windowSize;
         Config.Save();
 
-        DService.Instance().UIBuilder.Draw -= OnDraw;
-        
+        _pluginInterface.UiBuilder.Draw -= OnDraw;
+
         HuntDataManager.OnTerritoryChanged -= OnTerritoryChanged;
-        
+
         HuntDataManager.Cleanup();
         CounterManager.Cleanup();
-        
+
         DService.Instance().Command.RemoveHandler("/eh");
         DService.Instance().Command.RemoveHandler("/eh reload");
         TaskHelper.Dispose();

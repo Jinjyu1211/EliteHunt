@@ -1,0 +1,6 @@
+c:\Users\ROG\AppData\Roaming\XIVLauncherCN\pluginConfigs\EliteHunt\obj\Debug\EliteHunt.csproj.AssemblyReference.cache
+c:\Users\ROG\AppData\Roaming\XIVLauncherCN\pluginConfigs\EliteHunt\obj\Debug\EliteHunt.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\ROG\AppData\Roaming\XIVLauncherCN\pluginConfigs\EliteHunt\obj\Debug\EliteHunt.AssemblyInfoInputs.cache
+c:\Users\ROG\AppData\Roaming\XIVLauncherCN\pluginConfigs\EliteHunt\obj\Debug\EliteHunt.AssemblyInfo.cs
+c:\Users\ROG\AppData\Roaming\XIVLauncherCN\pluginConfigs\EliteHunt\obj\Debug\EliteHunt.csproj.CoreCompileInputs.cache
+c:\Users\ROG\AppData\Roaming\XIVLauncherCN\pluginConfigs\EliteHunt\obj\Debug\EliteHunt.sourcelink.json
